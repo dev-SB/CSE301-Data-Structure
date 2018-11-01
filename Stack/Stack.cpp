@@ -5,8 +5,8 @@ template<typename t>
 class Stack {
 private:
     int top = -1;
-    int sizeStack;//Unable to implement dynamic size array so using a fix size array, whose value needs to be change
-                    //according to the program.
+    int sizeStack;
+                  
     t array[5];
 public:
 
