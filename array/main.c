@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void insert(int arr[], int value, int size);
-
+int secondLargest(int arr[],int size);
 void delete(int arr[], int index, int size);
 void print(int arr[],int size);
 int main() {
@@ -16,6 +16,7 @@ int main() {
     int index;
     scanf("%d", &index);
     delete(arr, index, size);
+    printf("%d\n",secondLargest(arr);
     return 0;
 }
 
@@ -35,4 +36,16 @@ void print(int arr[],int size){
     for(int i=0;i<=size;i++){
         printf("%d ",arr[i]);
     }printf("\n");
+}
+int secondLargest(int arr[]){
+    int largest=0;
+    int secLar=0;
+    for(int i=0;i<size;i++){
+        if(arr[i]>largest){
+            largest=arr[i];
+        }else if(arr[i]<largest && arr[i]>secLar){
+            secLar=arr[i];
+        }
+    }
+    return secLar;
 }
